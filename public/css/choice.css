@@ -1,0 +1,46 @@
+.buttons-container{
+  width: 100%;
+  height: calc(100vh - 80px);
+  background-color: #FBE039;
+  margin-top: 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.go-write-btn{
+  /* background-color: red; */
+  width: 30%;
+  height: 30%;
+
+  border-radius: 25px;
+  border: solid 3px rgb(60,60,255);
+  margin: 40px;
+  padding: 20px;
+  justify-content: center;
+  text-align: center;
+
+  transition: all 0.15s ease-out;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  text-decoration: none;
+  color: rgb(60,60,255);
+
+}
+
+.go-write-btn:hover {
+  background-color: blue;
+  color: #FFF;
+}
+
+@media screen and (max-width: 900px) {
+  .buttons-container{
+    flex-direction: column;
+  }
+  .go-write-btn{
+    width: 60%;
+  }
+}
